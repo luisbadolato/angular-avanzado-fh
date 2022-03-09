@@ -1,0 +1,35 @@
+.btn.btn-primary {
+    border: 2px solid #745af2;
+}
+.btn.btn-primary:active,
+.btn.btn-primary:focus {
+    border: 2px solid #6352ce;
+}
+.btn.btn-success {
+    border: 2px solid #06d79c;
+}
+.btn.btn-success:active,
+.btn.btn-success:focus {
+    border: 2px solid #6352ce;
+}
+.btn.btn-info {
+    border: 2px solid #398bf7;
+}
+.btn.btn-info:active,
+.btn.btn-info:focus {
+    border: 2px solid #398bf7;
+}
+.btn.btn-warning {
+    border: 2px solid #ffb22b;
+}
+.btn.btn-warning:active,
+.btn.btn-warning:focus {
+    border: 2px solid #ffb22b;
+}
+.btn.btn-danger {
+    border: 2px solid #ef5350;
+}
+.btn.btn-danger:active,
+.btn.btn-danger:focus {
+    border: 2px solid #ef5350;
+}
