@@ -26,7 +26,6 @@ export function assignColors(colors: string[], length: number = colors.length): 
                 .getPropertyValue(`--color-${color}`);
             outputColors.push(value);
  
-        
     });
 
     return outputColors;

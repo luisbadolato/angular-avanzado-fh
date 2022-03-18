@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { SettingsService } from '../services/settings.service';
+
+declare function customInitFunction(): void; // Hack-fraud para obligar a TS a "localizar" la función en el scope global
 
 @Component({
   selector: 'app-pages',
@@ -7,10 +10,17 @@ import { Component, OnInit } from '@angular/core';
   ]
 })
 export class PagesComponent implements OnInit {
-
-  constructor() { }
-
+  
+  constructor( private settingsService: SettingsService ) { }
+  
   ngOnInit(): void {
+    
+    customInitFunction();
+
   }
 
+  
+
 }
+
+

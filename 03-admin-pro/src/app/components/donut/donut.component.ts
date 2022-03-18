@@ -10,6 +10,12 @@ import { Graph, assignColors } from 'src/app/interfaces/graph.interface';
 })
 export class DonutComponent implements OnChanges {
 
+  // public degrees: number = 0;
+  // public  degreeInterval = setInterval(() => {
+  //   console.log(this.degrees);
+  //   return this.degrees++;
+  // }, 500);
+
   constructor () {}
 
   ngOnChanges(changes: SimpleChanges): void {
@@ -27,6 +33,8 @@ export class DonutComponent implements OnChanges {
                         ? assignColors(this.graph.hoverBorderColors!) 
                         : this.graph.hoverBorderColors;
 
+    
+
     this.doughnutChartData = {
       labels: this.graph.labels,
       datasets: [
@@ -36,8 +44,11 @@ export class DonutComponent implements OnChanges {
           hoverBackgroundColor: chartHoverColors,
           borderColor: chartBgBorderColors,
           hoverBorderColor: chartHoverBorderColors,
+          hoverOffset: 0,
+          borderJoinStyle: 'miter',
+          rotation: 0
         }
-      ]
+      ],
     }
 
   }
